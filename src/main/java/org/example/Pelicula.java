@@ -7,12 +7,15 @@ public class Pelicula {
     private String director;
     private String genero;
 
-    public Pelicula(Integer id, String titulo, Integer anho, String director, String genero) {
+    private String poster;
+
+    public Pelicula(Integer id, String titulo, Integer anho, String director, String genero, String poster) {
         this.id = id;
         this.titulo = titulo;
         this.anho = anho;
         this.director = director;
         this.genero = genero;
+        this.poster = poster;
     }
 
     public Integer getId() {
@@ -33,6 +36,10 @@ public class Pelicula {
 
     public String getGenero() {
         return genero;
+    }
+
+    public String getPoster() {
+        return poster;
     }
 
     @Override
